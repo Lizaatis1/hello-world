@@ -1,0 +1,29 @@
+Database table codes
+Software needed for the task: Microsoft SQL Server Management Studio
+CREATE DATABASE Education//(select the statement and press F5 to execute and create database)
+
+Use Education
+CREATE TABLE Student (
+student_id  INT(11)  Not null
+student_name VARCHAR(250) Not null
+NumberOfStudents  INT()
+)
+
+
+CREATE TABLE Course (
+Course_id  INT(11) Not null
+course_name VARCHAR(250) Not null
+)
+
+CREATE TABLE Institution (
+institution_id  INT(11) Not null
+institution_name VARCHAR(250) Not null
+)
+
+SELECT Institution.institution_name,Course.course_name,Students.NumberOfStudents FROM institution_table as t1
+  LEFT JOIN table_course as t2 ON t1.institutiont_id = t2
+   LEFT JOIN NumberOfStydent table as t3 ON t1.institutiont_id = t3.NumberOfStudents
+
+
+
+
